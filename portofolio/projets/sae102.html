@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAÉ 1.02 — Base de données réseau social</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../presentation.html">Présentation</a></li>
+      <li><a href="../competences.html">Compétences</a></li>
+      <li><a href="../projets.html" class="active">SAÉ & Projets</a></li>
+      <li><a href="../veille.html">Veille</a></li>
+      <li><a href="../bilan.html">Bilan</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="detail-hero-inner">
+      <div class="detail-badge">SAÉ 1.02 · BUT1 · Semestre 1</div>
+      <h1>Base de données réseau social</h1>
+      <p>Modélisation et implémentation SQL complète : utilisateurs, publications, commentaires, amitiés.</p>
+    </div>
+  </section>
+
+  <div class="detail-body">
+    <a href="../projets.html" class="back-link">← Retour aux projets</a>
+
+    <div class="info-grid">
+      <div class="info-box"><div class="info-box-label">Semestre</div><div class="info-box-value">S1 — BUT1</div></div>
+      <div class="info-box"><div class="info-box-label">Équipe</div><div class="info-box-value">Individuel</div></div>
+      <div class="info-box"><div class="info-box-label">Technologies</div><div class="info-box-value">SQL · MCD · MLD</div></div>
+      <div class="info-box"><div class="info-box-label">Compétences BUT</div><div class="info-box-value">Gérer · Concevoir</div></div>
+    </div>
+
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Le projet en bref</h2>
+    <p style="color:var(--gray-600);line-height:1.8;margin-bottom:2rem;">
+      À partir d'un scénario de réseau social, j'ai conçu une base de données complète avec utilisateurs, publications, commentaires, amis, likes.
+      J'ai d'abord construit un modèle conceptuel (MCD), avant de traduire le tout en SQL pour créer les tables, insérer des données et écrire des requêtes.
+      Ce projet m'a permis de comprendre en profondeur la modélisation de données et les liens entre différentes entités dans un système complexe.
+    </p>
+
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Déroulement</h2>
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Analyse du scénario</h4>
+          <p>Identification des entités : Utilisateur, Publication, Commentaire, Amitié, Like. Définition des cardinalités.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Conception MCD → MLD</h4>
+          <p>Modèle Conceptuel puis Logique. Normalisation des tables pour éviter les redondances.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Implémentation SQL</h4>
+          <p>Création des tables, clés primaires et étrangères, contraintes d'intégrité, insertion de données de test.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Requêtes d'analyse</h4>
+          <p>SELECT complexes avec jointures, GROUP BY, HAVING pour analyser les interactions du réseau social.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="retour-box">
+      La SAÉ qui m'a le plus sensibilisé à l'importance de bien penser une architecture de données avant d'écrire une seule ligne de code.
+      Un MCD mal conçu engendre des problèmes en cascade. J'ai compris pourquoi les bases de données relationnelles sont encore au cœur de presque tout système.
+    </div>
+
+    <div class="concepts-grid">
+      <span class="concept-pill">Modélisation</span>
+      <span class="concept-pill">Normalisation</span>
+      <span class="concept-pill">Jointures SQL</span>
+      <span class="concept-pill">Clés étrangères</span>
+      <span class="concept-pill">Intégrité référentielle</span>
+    </div>
+
+    <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="sae101.html" class="btn btn-ghost">← SAÉ précédente</a>
+      <a href="sae103.html" class="btn btn-green">SAÉ suivante →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>

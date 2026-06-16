@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mnémosyne — Adem Ben Maamar</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../presentation.html">Présentation</a></li>
+      <li><a href="../competences.html">Compétences</a></li>
+      <li><a href="../projets.html" class="active">SAÉ & Projets</a></li>
+      <li><a href="../veille.html">Veille</a></li>
+      <li><a href="../bilan.html">Bilan</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="detail-hero-inner">
+      <div class="detail-badge">SAÉ BUT2 · Projet de groupe · Web</div>
+      <h1>Mnémosyne</h1>
+      <p>« Garder la mémoire, éclairer les parcours. » — Suivi de cohortes d'étudiants de l'IUT de Villetaneuse.</p>
+    </div>
+  </section>
+
+  <div class="detail-body">
+    <a href="../projets.html" class="back-link">← Retour aux projets</a>
+
+    <div class="info-grid">
+      <div class="info-box"><div class="info-box-label">Formation</div><div class="info-box-value">BUT2 Informatique</div></div>
+      <div class="info-box"><div class="info-box-label">Équipe</div><div class="info-box-value">Groupe</div></div>
+      <div class="info-box"><div class="info-box-label">Technologies</div><div class="info-box-value">HTML/CSS/JS · PHP · SQL</div></div>
+      <div class="info-box"><div class="info-box-label">API</div><div class="info-box-value">SCODOC 9</div></div>
+      <div class="info-box"><div class="info-box-label">Client</div><div class="info-box-value">IUT de Villetaneuse</div></div>
+      <div class="info-box"><div class="info-box-label">Compétences BUT</div><div class="info-box-value">Concevoir · Gérer · Collaborer</div></div>
+    </div>
+
+    <!-- Contexte -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Contexte du projet</h2>
+    <p style="color:var(--gray-600);line-height:1.8;margin-bottom:1rem;">
+      Depuis 2021, les IUT forment selon le diplôme BUT (Bachelor Universitaire de Technologie), organisé par compétences.
+      L'IUT de Villetaneuse prépare à 6 BUT : CJ, GEA, GEII, INFO, RT et SD.
+    </p>
+    <p style="color:var(--gray-600);line-height:1.8;margin-bottom:2rem;">
+      Le projet <strong>Mnémosyne</strong> répond à une question institutionnelle clé — le suivi des cohortes d'étudiants —
+      en permettant d'accéder facilement et rapidement aux parcours de chaque promotion,
+      depuis leur entrée en BUT1 jusqu'à leur sortie du cursus.
+    </p>
+
+    <div class="quote-block">
+      <blockquote>
+        Dans la mythologie grecque, Mnémosyne est la déesse de la mémoire. Sa fonction était de garder la trace du passé pour nourrir le savoir, la création et la transmission.
+      </blockquote>
+      <cite>— Inspiration du nom du projet</cite>
+    </div>
+
+    <!-- Architecture -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin:2rem 0 1rem;">Architecture de la plateforme</h2>
+    <div class="card-grid-2" style="margin-bottom:2rem;">
+      <div class="card">
+        <div class="card-icon icon-green">👁️</div>
+        <h3>Partie Consultation</h3>
+        <p>L'utilisateur choisit une <strong>année</strong> et une <strong>formation</strong> (ex. INFO 2022/2023).
+        La plateforme affiche un <strong>diagramme de Sankey interactif</strong> montrant le devenir de la cohorte :
+        validations (ADM), partielles (PASD), redoublants (RED), abandons (NAR), validations jury (ADJ)…</p>
+        <p style="margin-top:0.7rem;">Les valeurs sont cliquables pour naviguer entre les années et suivre la cohorte dans le temps.
+        Une option "Tout l'IUT" permet une vision globale sur tous les départements.</p>
+        <div class="tags">
+          <span class="tag tag-green">Sankey</span>
+          <span class="tag tag-green">Interactif</span>
+          <span class="tag tag-green">Navigation</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon icon-red">⚙️</div>
+        <h3>Partie Administration</h3>
+        <p>Accessible uniquement aux utilisateurs autorisés. Un <strong>bouton de synchronisation</strong> charge depuis l'API SCODOC
+        les données non encore présentes en base.</p>
+        <p style="margin-top:0.7rem;">L'administrateur définit également les <strong>scénarios de suivi</strong> :
+        un étudiant qui bascule de FI vers FA, d'un BUT vers une passerelle, etc.
+        Ces règles métier déterminent comment chaque étudiant est comptabilisé dans les diagrammes.</p>
+        <div class="tags">
+          <span class="tag tag-red">Synchronisation</span>
+          <span class="tag tag-red">Scénarios</span>
+          <span class="tag tag-red">Droits d'accès</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Déroulement -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Déroulement du projet</h2>
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Analyse des besoins & documentation API</h4>
+          <p>Étude de la documentation de l'API SCODOC 9, analyse des JSON de test fournis pour comprendre la structure des données. Définition de la meilleure architecture à adopter.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Conception de la base de données</h4>
+          <p>Modélisation du schéma de stockage pour les cohortes, les décisions annuelles (ADM, PASD, RED, NAR, ADJ) et les scénarios de suivi. Normalisation et gestion des cas particuliers (passerelles, changements FI/FA).</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Développement — Partie consultation</h4>
+          <p>Interface HTML/CSS/JS avec sélecteur d'année et de formation. Intégration des diagrammes Sankey interactifs. Navigation entre les années par clic sur les valeurs.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Développement — Partie administration</h4>
+          <p>Système d'authentification, bouton de synchronisation connecté à l'API SCODOC, interface de définition des scénarios de suivi et de mapping des codes.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Tests avec données fictives & livraison</h4>
+          <p>Tests complets avec les jeux de données JSON fournis. Validation du bon affichage des cohortes et de la navigation. Présentation au client (IUT).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="retour-box">
+      Mnémosyne m'a confronté à un vrai projet client avec des contraintes institutionnelles réelles.
+      Comprendre le fonctionnement d'une API externe, concevoir une architecture qui gère des cas métier complexes
+      (les passerelles, les changements de régime FI/FA), et produire une interface utile pour des décideurs non-développeurs —
+      c'est une expérience radicalement différente des SAÉ individuelles. Le travail en groupe sur un projet de cette envergure
+      a aussi renforcé mes compétences en coordination et en communication technique.
+    </div>
+
+    <!-- Formations couvertes -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Formations suivies</h2>
+    <div class="tags" style="gap:0.5rem;margin-bottom:2rem;">
+      <span class="tag tag-green">BUT CJ — Carrière juridique</span>
+      <span class="tag tag-green">BUT GEA — Gestion</span>
+      <span class="tag tag-green">BUT GEII — Génie électrique</span>
+      <span class="tag tag-green">BUT INFO — Informatique</span>
+      <span class="tag tag-green">BUT RT — Réseaux & Télécom</span>
+      <span class="tag tag-green">BUT SD — Science des données</span>
+    </div>
+
+    <!-- Décisions -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Codes de décision SCODOC gérés</h2>
+    <div class="card-grid" style="margin-bottom:2rem;">
+      <div class="card" style="padding:1.2rem;">
+        <div style="font-size:1.4rem;font-weight:900;color:var(--green);">ADM</div>
+        <p style="font-size:0.85rem;color:var(--gray-600);">Admission — toutes les compétences validées</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <div style="font-size:1.4rem;font-weight:900;color:var(--green);">PASD</div>
+        <p style="font-size:0.85rem;color:var(--gray-600);">Passage sans toutes les compétences validées</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <div style="font-size:1.4rem;font-weight:900;color:var(--red);">RED</div>
+        <p style="font-size:0.85rem;color:var(--gray-600);">Redoublement</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <div style="font-size:1.4rem;font-weight:900;color:var(--red);">NAR</div>
+        <p style="font-size:0.85rem;color:var(--gray-600);">Abandon — Non-Autorisation à Redoubler</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <div style="font-size:1.4rem;font-weight:900;color:var(--green);">ADJ</div>
+        <p style="font-size:0.85rem;color:var(--gray-600);">Admission par décision de jury</p>
+      </div>
+    </div>
+
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Concepts & Technologies</h2>
+    <div class="concepts-grid">
+      <span class="concept-pill">HTML / CSS / JavaScript</span>
+      <span class="concept-pill">PHP côté serveur</span>
+      <span class="concept-pill">SQL & Modélisation</span>
+      <span class="concept-pill">API REST — SCODOC 9</span>
+      <span class="concept-pill">Diagramme de Sankey</span>
+      <span class="concept-pill">Authentification</span>
+      <span class="concept-pill">Travail en groupe</span>
+      <span class="concept-pill">Gestion de version Git</span>
+    </div>
+
+    <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="../projets.html" class="btn btn-ghost">← Tous les projets</a>
+      <a href="../stage.html" class="btn btn-green">Voir mon stage TDF →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>

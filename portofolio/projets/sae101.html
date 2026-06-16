@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAÉ 1.01 — Jeu d'échecs Java</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../presentation.html">Présentation</a></li>
+      <li><a href="../competences.html">Compétences</a></li>
+      <li><a href="../projets.html" class="active">SAÉ & Projets</a></li>
+      <li><a href="../veille.html">Veille</a></li>
+      <li><a href="../bilan.html">Bilan</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="detail-hero-inner">
+      <div class="detail-badge">SAÉ 1.01 · BUT1 · Semestre 1</div>
+      <h1>Jeu d'échecs en Java</h1>
+      <p>Développement complet d'un jeu d'échecs jouable en terminal avec gestion complète des règles.</p>
+    </div>
+  </section>
+
+  <div class="detail-body">
+    <a href="../projets.html" class="back-link">← Retour aux projets</a>
+
+    <div class="info-grid">
+      <div class="info-box"><div class="info-box-label">Semestre</div><div class="info-box-value">S1 — BUT1</div></div>
+      <div class="info-box"><div class="info-box-label">Équipe</div><div class="info-box-value">Individuel</div></div>
+      <div class="info-box"><div class="info-box-label">Technologies</div><div class="info-box-value">Java · POO</div></div>
+      <div class="info-box"><div class="info-box-label">Compétences BUT</div><div class="info-box-value">Réaliser · Optimiser</div></div>
+    </div>
+
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Le projet en bref</h2>
+    <p style="color:var(--gray-600);line-height:1.8;margin-bottom:2rem;">
+      J'ai développé un jeu d'échecs en Java, entièrement jouable dans le terminal. Ce projet m'a demandé de gérer la logique des déplacements,
+      les tours de jeu, et les règles du jeu d'échecs comme les prises, les mises en échec et le roque.
+      Cela m'a permis de consolider mes bases en programmation orientée objet, de réfléchir à une structure claire pour les pièces et le plateau,
+      et d'améliorer ma rigueur algorithmique.
+    </p>
+
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Déroulement</h2>
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Conception de la structure</h4>
+          <p>Modélisation des classes : Pièce (abstraite), Roi, Dame, Tour, Fou, Cavalier, Pion. Définition du plateau 8×8.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Logique des déplacements</h4>
+          <p>Implémentation des règles de mouvement pour chaque type de pièce. Vérification de la validité des coups.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Règles avancées</h4>
+          <p>Gestion des prises, de l'échec, de l'échec et mat et du roque. Tests de toutes les situations de jeu.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Rendu final</h4>
+          <p>Jeu jouable en terminal, affichage du plateau, saisie des coups, détection de fin de partie.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="retour-box">
+      Ce projet m'a appris que la POO n'est pas seulement un concept théorique — c'est une façon de penser la structure du code.
+      Modéliser un jeu d'échecs m'a forcé à réfléchir à chaque interaction entre les pièces.
+      Premier grand projet Java, et une vraie satisfaction de le voir fonctionner.
+    </div>
+
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:0.8rem;">Concepts clés</h2>
+    <div class="concepts-grid">
+      <span class="concept-pill">Héritage</span>
+      <span class="concept-pill">Polymorphisme</span>
+      <span class="concept-pill">Encapsulation</span>
+      <span class="concept-pill">Design patterns</span>
+      <span class="concept-pill">Algorithmique</span>
+    </div>
+
+    <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="../projets.html" class="btn btn-ghost">← Tous les projets</a>
+      <a href="sae102.html" class="btn btn-green">SAÉ suivante →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>

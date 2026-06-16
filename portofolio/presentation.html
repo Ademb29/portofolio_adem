@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Présentation — Adem Ben Maamar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="presentation.html" class="active">Présentation</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">SAÉ & Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="bilan.html">Bilan</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="detail-hero">
+    <div class="detail-hero-inner">
+      <div class="detail-badge">01 — Présentation</div>
+      <h1>Adem Ben Maamar</h1>
+      <p>« Attiré par la logique, les systèmes informatiques, et le travail d'équipe depuis toujours. »</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Intro -->
+      <div class="card" style="margin-bottom:2rem;">
+        <p style="font-size:1.02rem; line-height:1.8;">
+          Je m'appelle <strong>Adem Ben Maamar</strong>. Je suis étudiant en <strong>BUT Informatique</strong> à l'IUT de Villetaneuse, Université Sorbonne Paris Nord.
+          J'ai choisi ce parcours pour apprendre à concevoir des applications, résoudre des problèmes techniques, et comprendre le fonctionnement des outils numériques.
+          <br><br>
+          Aujourd'hui, je développe des compétences en Java, HTML/CSS, SQL, ainsi qu'en gestion de projet.
+          Je suis une personne sérieuse, motivée, et toujours prête à apprendre pour progresser dans le monde de l'informatique.
+        </p>
+      </div>
+
+      <!-- Parcours scolaire -->
+      <span class="section-label">Parcours scolaire</span>
+      <h2 class="section-title" style="margin-bottom:2rem;">Formation <span class="g">académique</span></h2>
+      <div class="timeline" style="margin-bottom:3.5rem;">
+        <div class="tl-item">
+          <div class="tl-dot">🎓</div>
+          <div class="tl-body">
+            <div class="tl-label">En cours · 2024 – 2027</div>
+            <div class="tl-title">BUT Informatique — 1ère année</div>
+            <div class="tl-text">IUT de Villetaneuse, Université Sorbonne Paris Nord. Combinaison de théorie et pratique : développement logiciel (Java, Web), bases de données, gestion de projet, travail en équipe.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">📐</div>
+          <div class="tl-body">
+            <div class="tl-label">Obtenu · 2024</div>
+            <div class="tl-title">Baccalauréat STI2D — Spécialité SIN</div>
+            <div class="tl-text">Systèmes d'Information et Numérique. Découverte des bases : programmation, systèmes embarqués, électronique, réseau. C'est là que la passion pour le numérique est née.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expériences -->
+      <span class="section-label">Expériences professionnelles</span>
+      <h2 class="section-title" style="margin-bottom:2rem;">Des métiers qui <span class="r">forgent</span></h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon icon-red">🍽️</div>
+          <h3>Serveur — Restaurant</h3>
+          <p>Environnement dynamique et sous pression. Gestion du stress, rapidité d'exécution et sens du relationnel client. Des qualités qui se retrouvent dans la gestion de projet informatique.</p>
+          <div class="tags">
+            <span class="tag tag-red">Gestion du stress</span>
+            <span class="tag tag-red">Relationnel</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-green">🥐</div>
+          <h3>Aide-boulanger — Boulangerie artisanale</h3>
+          <p>Travail exigeant avec des horaires très matinaux. Formation à la ponctualité, à la discipline et au travail en équipe. Aide à la préparation, la cuisson et au nettoyage.</p>
+          <div class="tags">
+            <span class="tag tag-green">Ponctualité</span>
+            <span class="tag tag-green">Discipline</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-red">🚒</div>
+          <h3>Jeune sapeur-pompier — Caserne</h3>
+          <p>Formation complète sur les premiers secours, la sécurité et le travail en groupe. Apprentissage du calme face à l'urgence, des décisions rapides et de la rigueur absolue.</p>
+          <div class="tags">
+            <span class="tag tag-red">Rigueur</span>
+            <span class="tag tag-red">Décision rapide</span>
+            <span class="tag tag-red">Engagement</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Qualités forgées -->
+      <div class="quote-block" style="margin-top:3rem;">
+        <blockquote>
+          Ces parcours m'ont forgé des qualités que la technique seule ne donne pas — la gestion du stress, la rigueur, le travail en équipe. C'est ce qui me différencie.
+        </blockquote>
+        <cite>— Adem Ben Maamar</cite>
+      </div>
+
+      <div class="tags" style="gap:0.5rem; margin-top:1rem;">
+        <span class="tag tag-green">Gestion du stress</span>
+        <span class="tag tag-green">Rigueur</span>
+        <span class="tag tag-green">Ponctualité</span>
+        <span class="tag tag-green">Adaptabilité</span>
+        <span class="tag tag-red">Solidarité</span>
+        <span class="tag tag-red">Communication</span>
+      </div>
+
+      <div style="margin-top:2.5rem;">
+        <a href="competences.html" class="btn btn-green">Voir mes compétences →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>

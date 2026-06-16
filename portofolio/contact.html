@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Adem Ben Maamar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">SAÉ & Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="bilan.html">Bilan</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="detail-hero-inner">
+      <div class="detail-badge">06 — Contact</div>
+      <h1>Travaillons ensemble.</h1>
+      <p>Alternance, stage, projet — n'hésitez pas à me contacter.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Infos -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <a href="mailto:adem.benm06@gmail.com" class="contact-item-value">adem.benm06@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">💼</div>
+            <div>
+              <div class="contact-item-label">LinkedIn</div>
+              <a href="[linkedin.com](https://linkedin.com/in/adem-ben-a5771530b)" target="_blank" class="contact-item-value">linkedin.com/in/adem-ben-a5771530b</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Formation</div>
+              <div class="contact-item-value">BUT Informatique — IUT Villetaneuse<br><span style="font-weight:400;font-size:0.85rem;color:var(--gray-600);">Université Sorbonne Paris Nord</span></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📂</div>
+            <div>
+              <div class="contact-item-label">Portfolio</div>
+              <a href="projets.html" class="contact-item-value">Voir mes SAÉ & Projets →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card verte -->
+        <div class="contact-card">
+          <div>
+            <h3>Disponible pour une alternance</h3>
+            <p style="margin-top:0.8rem;">
+              Je suis actuellement en BUT Informatique et je cherche une alternance pour la poursuite de ma formation.
+              Motivé, rigoureux et curieux, je m'adapte rapidement à de nouveaux environnements techniques.
+            </p>
+          </div>
+          <div>
+            <div class="tags" style="gap:0.5rem;margin-bottom:1.5rem;">
+              <span class="tag" style="background:rgba(255,255,255,0.15);color:white;">Développement</span>
+              <span class="tag" style="background:rgba(255,255,255,0.15);color:white;">Data</span>
+              <span class="tag" style="background:rgba(255,255,255,0.15);color:white;">Web</span>
+              <span class="tag" style="background:rgba(255,255,255,0.15);color:white;">Linux</span>
+            </div>
+            <a href="mailto:adem.benm06@gmail.com" class="btn btn-white">M'écrire un mail →</a>
+          </div>
+          <div class="quote-block" style="background:rgba(255,255,255,0.1);margin:0;padding:1.2rem 1.5rem;">
+            <blockquote style="font-size:0.95rem;">
+              « Choisis un travail que tu aimes et tu n'auras pas à travailler un seul jour de ta vie. »
+            </blockquote>
+            <cite>— Proverbe attribué à Confucius</cite>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>

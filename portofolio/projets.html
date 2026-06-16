@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAÉ & Projets — Adem Ben Maamar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html" class="active">SAÉ & Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="bilan.html">Bilan</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="detail-hero-inner">
+      <div class="detail-badge">03 — SAÉ & Projets</div>
+      <h1>Situations d'Apprentissage</h1>
+      <p>Projets BUT1, BUT2 et stage professionnel — du terminal au dashboard industriel international.</p>
+    </div>
+  </section>
+
+  <!-- BUT2 -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label">BUT2 — Projets majeurs</span>
+      <h2 class="section-title" style="margin-bottom:2rem;">Projets <span class="g">BUT2</span></h2>
+      <div class="card-grid">
+
+        <div class="sae-card">
+          <div class="sae-card-header" style="background:linear-gradient(135deg,#8B0000,var(--red));">
+            <div class="sae-badge">Stage · Professionnel · 8 semaines</div>
+            <h3>Stage — Total Energies Digital Factory</h3>
+            <p>Développeur Python/Flask · Angular · Paris</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Générateur de données industrielles en Python/Flask. Puis intégration dans l'équipe GRP : filtrage dynamique, export Excel, bouton d'import sur une app Angular de monitoring de 300 sites renouvelables.</p>
+            <div class="tags">
+              <span class="tag tag-red">Python</span>
+              <span class="tag tag-red">Flask</span>
+              <span class="tag tag-red">Angular</span>
+              <span class="tag tag-red">Agile</span>
+              <span class="tag tag-gray">Anglais</span>
+            </div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Jan–Mars 2026</span></div>
+            <a href="stage.html" class="sae-link" style="color:var(--red);">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ BUT2 · Groupe · Web</div>
+            <h3>Mnémosyne</h3>
+            <p>Suivi de cohortes d'étudiants — IUT Villetaneuse</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Application web connectée à l'API SCODOC pour visualiser les parcours des promotions BUT de l'IUT via des diagrammes Sankey interactifs. Partie consultation et administration.</p>
+            <div class="tags">
+              <span class="tag tag-green">PHP/SQL</span>
+              <span class="tag tag-green">HTML/CSS/JS</span>
+              <span class="tag tag-green">API REST</span>
+              <span class="tag tag-gray">Groupe</span>
+            </div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">BUT2</span></div>
+            <a href="projets/mnemosyne.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S1 -->
+  <section class="section section-alt">
+    <div class="container">
+      <span class="section-label">BUT1 — Semestre 1</span>
+      <h2 class="section-title" style="margin-bottom:2rem;">SAÉ <span class="g">S1</span></h2>
+      <div class="card-grid">
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 1.01 · Java</div>
+            <h3>Jeu d'échecs en Java</h3>
+            <p>Application terminal complète avec toutes les règles</p>
+          </div>
+          <div class="sae-card-body">
+            <p>POO, héritage, polymorphisme, encapsulation. Logique des déplacements, gestion de l'échec et mat, roque.</p>
+            <div class="tags"><span class="tag tag-green">Java</span><span class="tag tag-green">POO</span><span class="tag tag-gray">Individuel</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Réaliser · Optimiser</span></div>
+            <a href="projets/sae101.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 1.02 · SQL</div>
+            <h3>Base de données réseau social</h3>
+            <p>MCD → MLD → SQL complet</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Modélisation et implémentation SQL : utilisateurs, publications, commentaires, amitiés, requêtes d'analyse.</p>
+            <div class="tags"><span class="tag tag-green">SQL</span><span class="tag tag-green">MCD/MLD</span><span class="tag tag-gray">Individuel</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Gérer · Concevoir</span></div>
+            <a href="projets/sae102.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 1.03 · Gestion</div>
+            <h3>Projet de voyage en groupe</h3>
+            <p>Organisation avec budget, planning et délais</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Simulation d'un voyage avec contraintes réelles. Trello, répartition des tâches, décisions collectives.</p>
+            <div class="tags"><span class="tag tag-green">Trello</span><span class="tag tag-red">Équipe</span><span class="tag tag-gray">Groupe</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Collaborer · Gérer</span></div>
+            <a href="projets/sae103.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 1.04 · Communication</div>
+            <h3>Exposition & Communication</h3>
+            <p>Présentation publique devant un public varié</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Prise de parole, valorisation technique, réponses aux questions devant enseignants, étudiants et extérieurs.</p>
+            <div class="tags"><span class="tag tag-red">Oral</span><span class="tag tag-red">Vulgarisation</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Communiquer</span></div>
+            <a href="projets/sae104.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S2 -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label">BUT1 — Semestre 2</span>
+      <h2 class="section-title" style="margin-bottom:2rem;">SAÉ <span class="g">S2</span></h2>
+      <div class="card-grid">
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 2.01 · Java</div>
+            <h3>Application Java & Interface</h3>
+            <p>JavaFX + base de données + MVC</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Application complète avec interface graphique, connexion SQL via JDBC, architecture en couches.</p>
+            <div class="tags"><span class="tag tag-green">JavaFX</span><span class="tag tag-green">SQL</span><span class="tag tag-green">MVC</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Réaliser · Concevoir</span></div>
+            <a href="projets/sae201.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 2.02 · Algo</div>
+            <h3>Comparaison d'algorithmes</h3>
+            <p>Tri & recherche — benchmarks empiriques</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Implémentation et comparaison de tris (bulles, insertion, fusion, rapide) et recherches. Analyse de complexité.</p>
+            <div class="tags"><span class="tag tag-green">Java</span><span class="tag tag-green">Algorithmique</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Optimiser</span></div>
+            <a href="projets/sae202.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 2.03 · Linux</div>
+            <h3>Administration système Linux</h3>
+            <p>VM Debian + serveur LAMP complet</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Installation Debian sous VirtualBox, configuration Apache, MySQL, PHP. Déploiement d'une application web.</p>
+            <div class="tags"><span class="tag tag-green">Linux</span><span class="tag tag-green">Apache</span><span class="tag tag-green">PHP</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Administrer</span></div>
+            <a href="projets/sae203.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 2.04 · Python</div>
+            <h3>Visualisation de données</h3>
+            <p>Catastrophes climatiques — MCD → SQL → Python</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Cycle complet sur un dataset réel : modélisation, SQL, visualisations avec pandas et matplotlib.</p>
+            <div class="tags"><span class="tag tag-green">Python</span><span class="tag tag-green">pandas</span><span class="tag tag-green">SQL</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Analyser · Gérer</span></div>
+            <a href="projets/sae204.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 2.05 · Pro</div>
+            <h3>Recherche d'alternance</h3>
+            <p>Enquête, analyse, restitution orale</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Enquête terrain auprès d'étudiants et recruteurs, analyse qualitative, présentation orale des recommandations.</p>
+            <div class="tags"><span class="tag tag-red">Enquête</span><span class="tag tag-red">Oral</span><span class="tag tag-gray">Groupe</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Collaborer · Communiquer</span></div>
+            <a href="projets/sae205.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>

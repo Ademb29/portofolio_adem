@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compétences — Adem Ben Maamar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="competences.html" class="active">Compétences</a></li>
+      <li><a href="projets.html">SAÉ & Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="bilan.html">Bilan</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="detail-hero-inner">
+      <div class="detail-badge">02 — Compétences</div>
+      <h1>Compétences techniques</h1>
+      <p>Des langages et outils concrets, développés dans des projets réels et évalués en conditions professionnelles.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Langages -->
+      <span class="section-label">Langages de programmation</span>
+      <h2 class="section-title" style="margin-bottom:2rem;">Ma <span class="g">stack</span> technique</h2>
+      <div class="card-grid" style="margin-bottom:3.5rem;">
+        <div class="card">
+          <div class="card-icon icon-green">☕</div>
+          <h3>Java & POO</h3>
+          <p>Maîtrise de la programmation orientée objet. Utilisé dans plusieurs projets dont un jeu d'échecs complet et une application JavaFX avec base de données.</p>
+          <div class="tags"><span class="tag tag-green">POO</span><span class="tag tag-green">JavaFX</span><span class="tag tag-green">JDBC</span></div>
+          <div class="skill-bar" style="margin-top:1rem;"><div class="skill-fill" style="width:82%"></div></div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-green">🌐</div>
+          <h3>HTML / CSS</h3>
+          <p>Conception de pages web dynamiques et bien structurées. Mise en page responsive, intégration de styles et bonnes pratiques sémantiques.</p>
+          <div class="tags"><span class="tag tag-green">Responsive</span><span class="tag tag-green">Sémantique</span></div>
+          <div class="skill-bar" style="margin-top:1rem;"><div class="skill-fill" style="width:78%"></div></div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-green">🗄️</div>
+          <h3>SQL</h3>
+          <p>Modélisation MCD → MLD → SQL, création de schémas, insertions, requêtes complexes avec jointures, GROUP BY, HAVING. Appliqué à un réseau social complet.</p>
+          <div class="tags"><span class="tag tag-green">MCD/MLD</span><span class="tag tag-green">Jointures</span><span class="tag tag-green">MySQL</span></div>
+          <div class="skill-bar" style="margin-top:1rem;"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-green">🐍</div>
+          <h3>Python</h3>
+          <p>Scripts et traitements de données. Bibliothèques pandas, matplotlib, seaborn pour la visualisation. Utilisé dans la SAÉ sur les catastrophes climatiques.</p>
+          <div class="tags"><span class="tag tag-green">pandas</span><span class="tag tag-green">matplotlib</span><span class="tag tag-green">seaborn</span></div>
+          <div class="skill-bar" style="margin-top:1rem;"><div class="skill-fill" style="width:65%"></div></div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-red">✨</div>
+          <h3>JavaScript</h3>
+          <p>Compétences pour concevoir des interfaces interactives, manipuler le DOM et dynamiser des pages web. Utilisé en complément de HTML/CSS.</p>
+          <div class="tags"><span class="tag tag-red">DOM</span><span class="tag tag-red">Interactivité</span></div>
+          <div class="skill-bar" style="margin-top:1rem;"><div class="skill-fill" style="width:55%;background:linear-gradient(90deg,var(--red),var(--red-light))"></div></div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-red">⚙️</div>
+          <h3>C — Initiation</h3>
+          <p>Initiation au langage C et à la programmation bas niveau. Compréhension des pointeurs, de la gestion mémoire et des bases de la programmation système.</p>
+          <div class="tags"><span class="tag tag-red">Pointeurs</span><span class="tag tag-red">Mémoire</span><span class="tag tag-red">Bas niveau</span></div>
+          <div class="skill-bar" style="margin-top:1rem;"><div class="skill-fill" style="width:40%;background:linear-gradient(90deg,var(--red),var(--red-light))"></div></div>
+        </div>
+      </div>
+
+      <!-- Outils -->
+      <span class="section-label">Outils & Méthodes</span>
+      <h2 class="section-title" style="margin-bottom:2rem;">Outils <span class="g">professionnels</span></h2>
+      <div class="card-grid" style="margin-bottom:3.5rem;">
+        <div class="card">
+          <div class="card-icon icon-green">🔀</div>
+          <h3>Git & GitHub</h3>
+          <p>Versionnement de code, gestion de branches, collaboration en équipe. Outil indispensable dans tous les projets de groupe.</p>
+          <div class="tags"><span class="tag tag-green">Branches</span><span class="tag tag-green">Collaboration</span></div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-green">📊</div>
+          <h3>Modélisation de données</h3>
+          <p>Conception de MCD (Modèle Conceptuel de Données) et MLD (Modèle Logique) pour des bases de données relationnelles complexes.</p>
+          <div class="tags"><span class="tag tag-green">MCD</span><span class="tag tag-green">MLD</span><span class="tag tag-green">Normalisation</span></div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-red">🤝</div>
+          <h3>Gestion de projet</h3>
+          <p>Trello, planification, répartition des tâches, prise de parole en public, valorisation de projets devant un public varié.</p>
+          <div class="tags"><span class="tag tag-red">Trello</span><span class="tag tag-red">Planification</span><span class="tag tag-red">Communication</span></div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-green">🖥️</div>
+          <h3>Administration Linux</h3>
+          <p>Installation de VM Debian sous VirtualBox, configuration d'un serveur LAMP complet (Linux, Apache, MySQL, PHP).</p>
+          <div class="tags"><span class="tag tag-green">Linux</span><span class="tag tag-green">Apache</span><span class="tag tag-green">LAMP</span></div>
+        </div>
+      </div>
+
+      <!-- Qualités -->
+      <span class="section-label">Qualités humaines</span>
+      <h2 class="section-title" style="margin-bottom:2rem;">Ce qui me <span class="r">définit</span></h2>
+      <div class="pillar-grid">
+        <div class="pillar">
+          <div class="pillar-icon">🤝</div>
+          <h3>Travail d'équipe</h3>
+          <p>Collaborer efficacement, écouter les autres et m'adapter. Le collectif permet d'aller plus loin, à condition de savoir communiquer et faire preuve de solidarité.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🔍</div>
+          <h3>Curiosité</h3>
+          <p>Aimer apprendre, comprendre comment les choses fonctionnent, découvrir de nouvelles technologies. Quand un sujet m'intéresse, je vais chercher l'information par moi-même.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">📐</div>
+          <h3>Rigueur</h3>
+          <p>Attention aux détails, planification du travail en tenant compte des priorités, respect des délais. Ces qualités permettent d'avancer sereinement même sous pression.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>

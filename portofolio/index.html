@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adem Ben Maamar — Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">SAÉ & Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="bilan.html">Bilan</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">Portfolio · BUT Informatique · IUT Villetaneuse</div>
+      <h1>Adem<br><span class="gold">Ben Maamar</span></h1>
+      <p class="hero-sub">
+        Étudiant en 2ème année de BUT Informatique à l'Université Sorbonne Paris Nord.
+        Passionné par le développement logiciel, la data et l'innovation numérique.
+        Expérience de stage chez <strong style="color:#ffd580;">Total Energies Digital Factory</strong>.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">SAÉ & Projets</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Langages & Frameworks</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8</div>
+          <div class="stat-label">Semaines de stage TDF</div>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="projets.html" class="btn btn-white">Voir les projets →</a>
+        <a href="stage.html" class="btn btn-outline">Mon stage TDF →</a>
+        <a href="contact.html" class="btn btn-outline">Me contacter</a>
+      </div>
+      <div class="hero-stack">
+        <span class="hero-stack-label">Stack :</span>
+        <span class="stack-tag">Java</span>
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Angular</span>
+        <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">SQL</span>
+        <span class="stack-tag">Flask</span>
+        <span class="stack-tag">HTML/CSS</span>
+        <span class="stack-tag">Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUI SUIS-JE -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label">01 — À propos</span>
+      <h2 class="section-title">Qui suis-je <span class="g">?</span></h2>
+      <p class="section-sub">« La logique, les systèmes, et l'envie d'apprendre — voilà ce qui me définit. »</p>
+      <div class="card-grid-2">
+        <div class="card">
+          <div class="card-icon icon-green">🎓</div>
+          <h3>Étudiant BUT Informatique — 2ème année</h3>
+          <p>À l'IUT de Villetaneuse, Sorbonne Paris Nord. Formation alliant théorie et projets concrets : développement logiciel, bases de données, administration système, gestion de projet.</p>
+          <div class="tags">
+            <span class="tag tag-green">BUT Informatique</span>
+            <span class="tag tag-green">2ème année</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon icon-red">🏭</div>
+          <h3>Stage chez Total Energies Digital Factory</h3>
+          <p>8 semaines de stage en développement logiciel au sein de la TDF à Paris. Développement en Python/Flask et Angular sur des projets industriels réels, dans un environnement agile international.</p>
+          <div class="tags">
+            <span class="tag tag-red">Python · Flask</span>
+            <span class="tag tag-red">Angular</span>
+            <span class="tag tag-red">Agile</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <a href="presentation.html" class="btn btn-ghost">Voir ma présentation complète →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS EN VEDETTE -->
+  <section class="section section-alt">
+    <div class="container">
+      <span class="section-label">02 — SAÉ & Projets</span>
+      <h2 class="section-title">Projets <span class="g">réalisés</span></h2>
+      <p class="section-sub">Projets BUT1, BUT2 et stage professionnel — du terminal au dashboard industriel.</p>
+      <div class="card-grid">
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">Stage · BUT2 · TDF</div>
+            <h3>Stage Total Energies Digital Factory</h3>
+            <p>Développeur Python/Flask puis Angular — 8 semaines</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Générateur de données industrielles en Python/Flask. Filtrage, export Excel et import sur une app Angular de monitoring de 300 sites d'énergies renouvelables.</p>
+            <div class="tags"><span class="tag tag-red">Python</span><span class="tag tag-red">Angular</span><span class="tag tag-red">Agile</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">Professionnel</span></div>
+            <a href="stage.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ BUT2 · Groupe · Web</div>
+            <h3>Mnémosyne</h3>
+            <p>Suivi de cohortes d'étudiants — IUT Villetaneuse</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Application web connectée à l'API SCODOC. Diagrammes Sankey interactifs pour visualiser les parcours des étudiants par promotion et département.</p>
+            <div class="tags"><span class="tag tag-green">PHP/SQL</span><span class="tag tag-green">JS</span><span class="tag tag-green">API</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">BUT2</span></div>
+            <a href="projets/mnemosyne.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 1.01 · S1 · Java</div>
+            <h3>Jeu d'échecs en Java</h3>
+            <p>Application terminal complète — toutes les règles</p>
+          </div>
+          <div class="sae-card-body">
+            <p>POO, héritage, polymorphisme. Gestion de la logique des déplacements, échec et mat, roque.</p>
+            <div class="tags"><span class="tag tag-green">Java</span><span class="tag tag-green">POO</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">BUT1 · S1</span></div>
+            <a href="projets/sae101.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="sae-card">
+          <div class="sae-card-header">
+            <div class="sae-badge">SAÉ 2.04 · S2 · Python</div>
+            <h3>Visualisation de données</h3>
+            <p>Catastrophes climatiques — MCD → SQL → Python</p>
+          </div>
+          <div class="sae-card-body">
+            <p>Cycle complet sur un dataset réel : modélisation, SQL, visualisations avec pandas et matplotlib.</p>
+            <div class="tags"><span class="tag tag-green">Python</span><span class="tag tag-green">pandas</span><span class="tag tag-green">SQL</span></div>
+          </div>
+          <div class="sae-card-footer">
+            <div class="tags"><span class="tag tag-gray">BUT1 · S2</span></div>
+            <a href="projets/sae204.html" class="sae-link">Voir →</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="projets.html" class="btn btn-green">Voir tous les projets →</a>
+        <a href="stage.html" class="btn btn-red">Mon stage TDF →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

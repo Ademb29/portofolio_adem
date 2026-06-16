@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stage TDF — Adem Ben Maamar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .tdf-hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #8B0000 60%, var(--red) 100%);
+      padding: 7rem 2rem 4rem; color: var(--white);
+    }
+    .mission-card {
+      background: var(--white); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow); overflow: hidden; margin-bottom: 1.5rem;
+      border: 1px solid #e8ede9;
+    }
+    .mission-header {
+      padding: 1.2rem 1.5rem;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: var(--white); display: flex; align-items: center; gap: 1rem;
+    }
+    .mission-header.red-bg {
+      background: linear-gradient(135deg, #8B0000, var(--red));
+    }
+    .mission-num {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(255,255,255,0.2); display: flex;
+      align-items: center; justify-content: center;
+      font-weight: 900; font-size: 0.9rem; flex-shrink: 0;
+    }
+    .mission-body { padding: 1.5rem; }
+    .mission-body p { color: var(--gray-600); line-height: 1.8; margin-bottom: 1rem; }
+    .tech-used {
+      display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem;
+    }
+    .squad-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .squad-item {
+      background: var(--off-white); border-radius: var(--radius);
+      padding: 1rem 1.2rem; border-left: 3px solid var(--green);
+    }
+    .squad-role { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--green); margin-bottom: 0.2rem; }
+    .squad-name { font-weight: 700; font-size: 0.92rem; }
+    .kpi-row {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem; margin: 2rem 0;
+    }
+    .kpi-box {
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      border-radius: var(--radius-lg); padding: 1.4rem; color: var(--white);
+      text-align: center;
+    }
+    .kpi-box.red { background: linear-gradient(135deg, #8B0000, var(--red)); }
+    .kpi-val { font-size: 2rem; font-weight: 900; }
+    .kpi-lbl { font-size: 0.75rem; opacity: 0.82; margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">ABM<span>.</span></div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html" class="active">SAÉ & Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="bilan.html">Bilan</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="tdf-hero">
+    <div class="detail-hero-inner">
+      <div class="detail-badge">Stage · BUT2 · 26 janvier – 20 mars 2026</div>
+      <h1>Total Energies<br>Digital Factory</h1>
+      <p>Développeur Informatique — 8 semaines au cœur d'une "usine logicielle" internationale à Paris.</p>
+    </div>
+  </section>
+
+  <div class="detail-body">
+    <a href="projets.html" class="back-link">← Retour aux projets</a>
+
+    <!-- KPIs -->
+    <div class="kpi-row">
+      <div class="kpi-box"><div class="kpi-val">8</div><div class="kpi-lbl">Semaines de stage</div></div>
+      <div class="kpi-box"><div class="kpi-val">2</div><div class="kpi-lbl">Équipes intégrées</div></div>
+      <div class="kpi-box red"><div class="kpi-val">300+</div><div class="kpi-lbl">Sites monitorés</div></div>
+      <div class="kpi-box red"><div class="kpi-val">EN</div><div class="kpi-lbl">Réunions en anglais</div></div>
+    </div>
+
+    <!-- Infos -->
+    <div class="info-grid" style="margin-bottom:2.5rem;">
+      <div class="info-box"><div class="info-box-label">Entreprise</div><div class="info-box-value">Total Energies Digital Factory</div></div>
+      <div class="info-box"><div class="info-box-label">Poste</div><div class="info-box-value">Développeur Informatique</div></div>
+      <div class="info-box"><div class="info-box-label">Tuteur</div><div class="info-box-value">Yassine El-Alouani (PO)</div></div>
+      <div class="info-box"><div class="info-box-label">Lieu</div><div class="info-box-value">Paris 2ème — Open space</div></div>
+      <div class="info-box"><div class="info-box-label">Durée</div><div class="info-box-value">26 jan. – 20 mars 2026</div></div>
+      <div class="info-box"><div class="info-box-label">Méthodo</div><div class="info-box-value">Agile · Runs · Scoping</div></div>
+    </div>
+
+    <!-- Présentation entreprise -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">L'entreprise</h2>
+    <p style="color:var(--gray-600);line-height:1.8;margin-bottom:1rem;">
+      La <strong>Total Energies Digital Factory (TDF)</strong> est le centre d'excellence technologique du groupe Total Energies,
+      l'un des leaders mondiaux de l'énergie. Structurée comme une véritable "usine numérique" interne,
+      elle regroupe plus de <strong>300 experts</strong> — développeurs, Data Scientists, Product Owners — organisés en équipes autonomes appelées <strong>Squads</strong>.
+    </p>
+    <p style="color:var(--gray-600);line-height:1.8;margin-bottom:2rem;">
+      La TDF travaille en partenariat stratégique avec la société indienne <strong>TCS (Tata Consultancy Services)</strong>,
+      rendant l'anglais obligatoire dans toutes les réunions. L'organisation est rythmée par des <strong>cycles de 4 mois</strong>,
+      des semaines de <strong>Scoping</strong> (planification) et des <strong>Runs de 2 semaines</strong> pour l'exécution.
+    </p>
+
+    <!-- Organisation Squad -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Organisation en Squads</h2>
+    <div class="squad-grid">
+      <div class="squad-item"><div class="squad-role">Product Owner</div><div class="squad-name">Yassine (tuteur)</div></div>
+      <div class="squad-item"><div class="squad-role">Software Engineer</div><div class="squad-name">Naofel (équipe 1)</div></div>
+      <div class="squad-item"><div class="squad-role">Tech Lead</div><div class="squad-name">M'Barek</div></div>
+      <div class="squad-item"><div class="squad-role">Data Engineer</div><div class="squad-name">Ayoub</div></div>
+      <div class="squad-item"><div class="squad-role">DevOps / UX</div><div class="squad-name">Équipe multidisciplinaire</div></div>
+      <div class="squad-item"><div class="squad-role">Partenaire</div><div class="squad-name">TCS — Inde</div></div>
+    </div>
+
+    <!-- Partie 1 -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin:2rem 0 1rem;">Partie 1 — Générateur de données (Équipe Naofel)</h2>
+    <p style="color:var(--gray-600);line-height:1.8;margin-bottom:1.5rem;">
+      Le projet <strong>WOE</strong> mesure les performances de sites offshore pétroliers dans le monde (Nigeria, Brésil, Qatar…).
+      Pour tester les outils sans utiliser de données réelles ni mettre les sites en maintenance,
+      ma mission était de créer un <strong>générateur de données fictives</strong>.
+    </p>
+
+    <div class="mission-card">
+      <div class="mission-header">
+        <div class="mission-num">1</div>
+        <div>
+          <h4 style="font-weight:800;">Générateur Python/Flask — Version initiale</h4>
+          <p style="opacity:0.85;font-size:0.85rem;">Bouton unique → génération instantanée de données simulées</p>
+        </div>
+      </div>
+      <div class="mission-body">
+        <p>Développement d'une classe principale <code style="background:var(--gray-100);padding:0.1rem 0.4rem;border-radius:4px;">NumValue</code> avec des classes filles spécifiques (Pressure, Current…).
+        Routes Flask GET (affichage) et POST (génération). Affichage des valeurs simulées (ampères, bars, hertz) directement sur la page.</p>
+        <div class="tech-used">
+          <span class="tag tag-green">Python</span>
+          <span class="tag tag-green">Flask</span>
+          <span class="tag tag-green">POO</span>
+          <span class="tag tag-gray">Routes GET/POST</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-header">
+        <div class="mission-num">2</div>
+        <div>
+          <h4 style="font-weight:800;">Améliorations — Saisie dynamique & chronologie</h4>
+          <p style="opacity:0.85;font-size:0.85rem;">Date de début, date de fin, nombre de données par jour</p>
+        </div>
+      </div>
+      <div class="mission-body">
+        <p>Ajout de 3 champs de saisie (date début, date fin, quantité/jour). Boucle calculant l'écart entre les deux dates pour générer le volume exact.
+        Refactorisation avec une classe <code style="background:var(--gray-100);padding:0.1rem 0.4rem;border-radius:4px;">Data</code> dédiée.
+        Affichage chronologique avec heure, minute, seconde — rendu proche d'un flux industriel réel.</p>
+        <div class="tech-used">
+          <span class="tag tag-green">Algorithmique</span>
+          <span class="tag tag-green">Refactorisation</span>
+          <span class="tag tag-gray">UX</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-header">
+        <div class="mission-num">3</div>
+        <div>
+          <h4 style="font-weight:800;">Connexion base de données</h4>
+          <p style="opacity:0.85;font-size:0.85rem;">Persistance des données générées en table SQL</p>
+        </div>
+      </div>
+      <div class="mission-body">
+        <p>Création d'une base de données et connexion au site Flask. Les données générées s'affichent à l'écran ET sont insérées dans une table <code style="background:var(--gray-100);padding:0.1rem 0.4rem;border-radius:4px;">data</code> en base.
+        Permet à l'équipe de rejouer des scénarios de test complets sans toucher aux données réelles.</p>
+        <div class="tech-used">
+          <span class="tag tag-green">SQL</span>
+          <span class="tag tag-green">Flask-SQLAlchemy</span>
+          <span class="tag tag-gray">Persistance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="retour-box">
+      La semaine de <strong>Scoping</strong> entre les deux parties a été une découverte : suspendre le développement pour réfléchir
+      collectivement à la définition du succès, analyser les données capteurs avec l'équipe Data Science,
+      et planifier le prochain cycle via la méthode <strong>MVE (Minimum Viable Ecosystem)</strong>.
+      Une vision globale du cycle de vie d'un produit que l'IUT ne m'avait pas encore donnée.
+    </div>
+
+    <!-- Partie 2 -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin:2rem 0 1rem;">Partie 2 — Application GRP Angular (Équipe Yassine)</h2>
+    <p style="color:var(--gray-600);line-height:1.8;margin-bottom:1.5rem;">
+      Le projet de Yassine est un <strong>tableau de bord Angular</strong> dédié à la branche GRP (Gas, Renewables & Power) de Total Energies.
+      Il centralise les KPI de <strong>300 sites d'énergies renouvelables</strong> à travers le monde.
+      J'ai dû monter rapidement en compétences sur <strong>JavaScript avancé et Angular</strong> pour contribuer directement au projet.
+    </p>
+
+    <div class="mission-card">
+      <div class="mission-header red-bg">
+        <div class="mission-num">4</div>
+        <div>
+          <h4 style="font-weight:800;">Ticket #1 — Filtrage dynamique au chargement</h4>
+          <p style="opacity:0.85;font-size:0.85rem;">Afficher par défaut uniquement les KPI de l'année courante</p>
+        </div>
+      </div>
+      <div class="mission-body">
+        <p>Implémentation d'une logique de filtrage automatique dans le cycle de vie du composant Angular.
+        Au lancement, le tableau n'affiche que les indicateurs de l'année en cours via manipulation des objets Date en JavaScript.
+        Premier Pull Request validé par la Squad sur GitHub.</p>
+        <div class="tech-used">
+          <span class="tag tag-red">Angular</span>
+          <span class="tag tag-red">TypeScript</span>
+          <span class="tag tag-red">JavaScript</span>
+          <span class="tag tag-gray">GitHub PR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-header red-bg">
+        <div class="mission-num">5</div>
+        <div>
+          <h4 style="font-weight:800;">Ticket #2 — Export Excel</h4>
+          <p style="opacity:0.85;font-size:0.85rem;">Exporter les données du tableau vers un fichier Excel téléchargeable</p>
+        </div>
+      </div>
+      <div class="mission-body">
+        <p>Bouton Export capturant l'objet de données du tableau filtré, conversion au format Excel, déclenchement automatique du téléchargement.
+        Permet aux gestionnaires de réaliser leurs propres analyses statistiques et de partager des rapports de performance.</p>
+        <div class="tech-used">
+          <span class="tag tag-red">Angular</span>
+          <span class="tag tag-red">JavaScript</span>
+          <span class="tag tag-gray">Export Excel</span>
+          <span class="tag tag-gray">UX</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-header red-bg">
+        <div class="mission-num">6</div>
+        <div>
+          <h4 style="font-weight:800;">Ticket #3 — Bouton Import Excel</h4>
+          <p style="opacity:0.85;font-size:0.85rem;">Mise à jour mensuelle massive du tableau de bord</p>
+        </div>
+      </div>
+      <div class="mission-body">
+        <p>Le ticket le plus complexe algorithmiquement. Sélection d'un fichier Excel local, parcours du fichier importé,
+        comparaison ligne par ligne pour ne rajouter que les données nouvelles ou différentes (anti-doublons),
+        injection dynamique dans le tableau sans rechargement. Une tâche de plusieurs heures manuellement accomplie en quelques secondes.</p>
+        <div class="tech-used">
+          <span class="tag tag-red">Angular</span>
+          <span class="tag tag-red">TypeScript</span>
+          <span class="tag tag-gray">Algorithmique</span>
+          <span class="tag tag-gray">Import fichier</span>
+          <span class="tag tag-gray">Jira</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="retour-box">
+      Ce stage m'a fait passer du statut d'étudiant à celui de développeur capable de s'intégrer dans un projet réel de grande envergure.
+      Apprendre Angular en autonomie, travailler en anglais quotidiennement avec des équipes indiennes,
+      utiliser Jira et GitHub comme des outils de production — ce sont des compétences que seule une immersion en entreprise peut donner.
+      Je repars avec une vision globale du cycle de vie d'un produit numérique, de la planification au déploiement.
+    </div>
+
+    <!-- Outils utilisés -->
+    <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:1rem;">Stack & Outils utilisés</h2>
+    <div class="concepts-grid">
+      <span class="concept-pill">Python</span>
+      <span class="concept-pill">Flask</span>
+      <span class="concept-pill">Angular</span>
+      <span class="concept-pill">TypeScript</span>
+      <span class="concept-pill">JavaScript</span>
+      <span class="concept-pill">SQL</span>
+      <span class="concept-pill">GitHub</span>
+      <span class="concept-pill">Jira</span>
+      <span class="concept-pill">Agile / Scrum</span>
+      <span class="concept-pill">Anglais technique</span>
+      <span class="concept-pill">MVE</span>
+      <span class="concept-pill">API REST</span>
+    </div>
+
+    <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="projets.html" class="btn btn-ghost">← Tous les projets</a>
+      <a href="projets/mnemosyne.html" class="btn btn-green">Voir Mnémosyne →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 <strong>Adem Ben Maamar</strong> — Portfolio BUT Informatique<br>
+    Université Sorbonne Paris Nord · IUT Villetaneuse · Made with <span class="footer-red">♥</span></p>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>
